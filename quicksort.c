@@ -1,10 +1,10 @@
 #include<stdio.h>
 int partition(int arr[],int low,int high){
     int pivot=arr[low];
-    int i=low+1;
+    int i=low;
     int j=high;
     while(i<j){
-        while(i<=high&&arr[i]<pivot){
+        while(i<high&&arr[i]<=pivot){
             i++;
         }
         while(arr[j]>pivot){
