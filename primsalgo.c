@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    visited[0] = 1;   // Start from vertex 0
+    visited[0] = 1; 
 
     for (int edge = 0; edge < n - 1; edge++) {
         min = INF;
@@ -48,7 +48,3 @@ int main() {
 
     return 0;
 }
-/*0 10 6 5
-10 0 0 15
-6 0 0 4
-5 15 4 0*/
