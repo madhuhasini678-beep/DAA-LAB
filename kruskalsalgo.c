@@ -37,12 +37,10 @@ int main() {
             }
         }
     }
-
-    // Each vertex is its own group first
     for (i = 0; i < n; i++)
         parent[i] = i;
 
-    // Select minimum edges
+    
     for (i = 0; i < e && count < n - 1; i++) {
         int a = find(u[i]);
         int b = find(v[i]);
